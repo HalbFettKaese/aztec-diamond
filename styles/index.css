@@ -1,0 +1,25 @@
+#main-canvas {
+    background-color: rgba(0,0,0,0);
+    width: 516px;
+    height: 100%;
+}
+
+.center {
+    width: max-content;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.top-bar {
+    margin-top: 0px;
+}
+
+.step-button {
+    margin-top: 0px;
+    width: 110px;
+    height: 40px;
+}
+
+#pi-display:disabled {
+    color: black;
+}

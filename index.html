@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aztec Diamond Tiling</title>
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="icon" href="icon.png">
+    </head>
+    <body>
+        <div class="center">
+            <div class="top-bar">
+                <button onclick="buttonPurge()" class="step-button">Purge [1]</button>
+                <button onclick="buttonMove()" class="step-button">Move [2]</button>
+                <button onclick="buttonPopulate()" class="step-button">Populate [3]</button>
+                <button onclick="buttonReset()" class="step-button">Reset [R]</button>
+                <div class="center">
+                    <button onclick="buttonPi()">Calculate Pi [P]</button><input id="pi-display" value="Hello world" disabled></input >
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <canvas id="main-canvas"></canvas>
+            <script src="scripts/board.js"></script>
+            <script src="scripts/domino.js"></script>
+            <script src="scripts/main.js"></script>
+            <script src="scripts/gui.js"></script>
+        </div>
+    </body>
+</html>
