@@ -10,6 +10,7 @@ let ctx;
 let board;
 let tileSizeX;
 let tileSizeY;
+let edge = 0.5;
 canvas = document.querySelector("#main-canvas");
 ctx = canvas.getContext("2d");
 pi_display = document.querySelector("#pi-display");

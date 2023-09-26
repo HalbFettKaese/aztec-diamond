@@ -20,7 +20,7 @@ class Domino {
             }
             ctx.globalAlpha = this.alpha;
             ctx.fillStyle = d.color;
-            ctx.fillRect(x+-w*0.5,y+-h*0.5,w,h);
+            ctx.fillRect(x+-w*0.5 - edge,y+-h*0.5 - edge,w + edge,h + edge);
             if (board.arrowAlpha > 0) {
                 let dx = d.offset.x;
                 let dy = d.offset.y;

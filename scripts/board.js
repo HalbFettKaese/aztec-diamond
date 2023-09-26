@@ -114,18 +114,18 @@ class Board {
         for (let x=-1;x<=n;x++) {
             let y = 1/2 + n - Math.abs(x - (n-1) / 2);
             if (x<(n-1)/2) {
-                ctx.fillRect((x+1)*tileSizeX, borderWidth+y*tileSizeY, borderWidth, tileSizeY+borderWidth);
+                ctx.fillRect((x+1)*tileSizeX - edge, borderWidth+y*tileSizeY - edge, borderWidth + edge, tileSizeY+borderWidth + edge);
             } else {
-                ctx.fillRect(borderWidth+x*tileSizeX, borderWidth+y*tileSizeY, borderWidth, tileSizeY+borderWidth);
+                ctx.fillRect(borderWidth+x*tileSizeX - edge, borderWidth+y*tileSizeY - edge, borderWidth + edge, tileSizeY+borderWidth + edge);
             }
-            ctx.fillRect(borderWidth+x*tileSizeX, borderWidth+y*tileSizeY, tileSizeX, borderWidth);
+            ctx.fillRect(borderWidth+x*tileSizeX - edge, borderWidth+y*tileSizeY - edge, tileSizeX + edge, borderWidth + edge);
             y = -3/2 + Math.abs(x - (n-1) / 2);
             if (x<(n-1)/2) {
-                ctx.fillRect((x+1)*tileSizeX, y*tileSizeY, borderWidth, tileSizeY+borderWidth);
+                ctx.fillRect((x+1)*tileSizeX - edge, y*tileSizeY - edge, borderWidth + edge, tileSizeY+borderWidth + edge);
             } else {
-                ctx.fillRect(borderWidth+x*tileSizeX, y*tileSizeY, borderWidth, tileSizeY+borderWidth);
+                ctx.fillRect(borderWidth+x*tileSizeX - edge, y*tileSizeY - edge, borderWidth + edge, tileSizeY+borderWidth + edge);
             }
-            ctx.fillRect(borderWidth+x*tileSizeX, (y+1)*tileSizeY, tileSizeX, borderWidth);
+            ctx.fillRect(borderWidth+x*tileSizeX - edge, (y+1)*tileSizeY - edge, tileSizeX + edge, borderWidth + edge);
         }
     }
 
